@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Edit rbu.sh and rbu.plist BEFORE executing this script!
 # This file needs +x permissions.
 # In this terminal directory, run:
 # $ chmod +x install.sh
