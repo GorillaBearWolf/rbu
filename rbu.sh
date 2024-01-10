@@ -2,8 +2,9 @@
 
 # RBU, RemoteBorgUp, a backup script using BorgBackup on MacOS.
 # Update $BORG_REPO, $BORG_REMOTE_PATH, and $SSH for authentication.
-# Visit BorgBackup docs [https://borgbackup.readthedocs.io/] for help.
-# Add paths to $FOLDERS separated by spaces to include them in the backup.
+# Visit BorgBackup [https://borgbackup.readthedocs.io/] for help.
+# These can be removed if set as environment variables.
+# Add local paths to $FOLDERS separated by spaces to archive them.
 # $ANCHOR is an anchor file to log the last backup datetime.
 # The --dry-run flag is set by default to prevent accidental data egress.
 
