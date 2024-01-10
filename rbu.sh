@@ -15,11 +15,18 @@ ANCHOR="$HOME/.rbu"
 DATE="$(date +%F_%H:%M:%S)"
 
 if [ -e "$SSH" ]; then
+    echo "Updating anchor file..."
     touch "$ANCHOR"
     echo "$DATE" > "$ANCHOR"
+    echo "File updated: "$ANCHOR""
+    echo "Adding identity file..."
     ssh-add "$SSH"
+    echo "Creating backup..."
     borg create --dry-run --progress --stats ::$(hostname)-$(date -Iminutes) "${FOLDERS[@]}"
+    echo "Backup created."
+    echo "Removing identity file..."
     ssh-add -d "$SSH"
+    echo "Backup successful."
 else
     echo "Identity file not found, update \$SSH with an active key."
 fi
