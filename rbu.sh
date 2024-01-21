@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # RBU, RemoteBorgUp, a backup script using BorgBackup on MacOS.
 # Update $BORG_REPO, $BORG_REMOTE_PATH, and $SSH for authentication.

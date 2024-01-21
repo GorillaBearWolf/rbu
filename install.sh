@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Edit rbu.sh and rbu.plist BEFORE executing this script!
 # This file needs +x permissions.
